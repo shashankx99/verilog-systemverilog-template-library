@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Verilog & SystemVerilog Library | Shashank Singh</title>
+
+  <meta
+    name="description"
+    content="Explore 50 Verilog and SystemVerilog learning templates with code, explanations, examples, truth tables, and memory tips."
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">
+      <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+      <span>RTL Template Library</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#library">Templates</a>
+      <a href="#about">About</a>
+      <a
+        href="https://github.com/shashankx99/verilog-systemverilog-template-library"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">A LEARNING RESOURCE FOR DIGITAL DESIGN</p>
+
+      <h1 id="hero-title">
+        Understand the logic.<br>
+        <span>Build with confidence.</span>
+      </h1>
+
+      <p class="hero-description">
+        Explore Verilog and SystemVerilog through reusable code,
+        clear explanations, practical examples, and memory tips.
+      </p>
+
+      <a class="primary-button" href="#library">Explore templates →</a>
+
+      <ul class="stats" aria-label="Library contents">
+        <li><strong>50</strong> Templates</li>
+        <li><strong>30</strong> Verilog</li>
+        <li><strong>20</strong> SystemVerilog</li>
+      </ul>
+    </section>
+
+    <section id="library" class="library" aria-labelledby="library-title">
+      <div class="section-heading">
+        <p class="eyebrow">EXPLORE THE COLLECTION</p>
+        <h2 id="library-title">Template library</h2>
+        <p>Find a topic and select a template to start learning.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="search-field">
+          <label for="search-input">Search templates</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search gates, counters, arrays..."
+            autocomplete="off"
+          >
+        </div>
+
+        <div class="filter-field">
+          <label for="language-filter">Language</label>
+          <select id="language-filter">
+            <option value="all">All languages</option>
+            <option value="verilog">Verilog</option>
+            <option value="systemverilog">SystemVerilog</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="results-count" role="status" aria-live="polite"></p>
+
+      <div class="library-layout">
+        <aside class="template-sidebar" aria-label="Template selection">
+          <h3>Templates</h3>
+          <div id="template-list"></div>
+          <p id="empty-state" hidden>
+            No matching templates. Try another search.
+          </p>
+        </aside>
+
+        <article
+          id="template-viewer"
+          class="template-viewer"
+          aria-labelledby="template-title"
+        >
+          <div class="viewer-header">
+            <div>
+              <p id="template-language" class="eyebrow"></p>
+              <h2 id="template-title">Choose a template</h2>
+            </div>
+
+            <button id="copy-code" type="button" hidden>
+              Copy code
+            </button>
+          </div>
+
+          <p id="template-status" role="status" aria-live="polite">
+            Select a template to view its code and explanation.
+          </p>
+
+          <section id="code-section" hidden aria-labelledby="code-title">
+            <h3 id="code-title">Source code</h3>
+            <pre><code id="template-code"></code></pre>
+          </section>
+
+          <section
+            id="explanation-section"
+            hidden
+            aria-labelledby="explanation-title"
+          >
+            <h3 id="explanation-title">Explanation and examples</h3>
+            <div id="template-explanation"></div>
+          </section>
+        </article>
+      </div>
+
+      <noscript>
+        <p>
+          Enable JavaScript to search and browse templates here.
+          You can also read the collection on
+          <a href="https://github.com/shashankx99/verilog-systemverilog-template-library">
+            GitHub
+          </a>.
+        </p>
+      </noscript>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <p class="eyebrow">ABOUT THE PROJECT</p>
+      <h2 id="about-title">Built to make RTL learning easier.</h2>
+
+      <p>
+        Created by <strong>Shashank Singh</strong>, an M.Tech student
+        in VLSI Design at Thapar Institute of Engineering &amp; Technology.
+      </p>
+
+      <p>
+        This collection brings together digital logic, RTL design,
+        and SystemVerilog programming examples, with explanations
+        to help you understand and remember each concept.
+      </p>
+
+      <p class="project-note">
+        These are educational examples. They have not been validated
+        through compilation, simulation, synthesis, or FPGA testing.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created by Shashank Singh · Verilog &amp; SystemVerilog Template Library</p>
+    <a href="#top" aria-label="Return to top of page">Back to top ↑</a>
+  </footer>
+</body>
+</html>
